@@ -2,10 +2,10 @@ var express = require("express");
 var fs = require("fs");
 
 var app = express();
-const port = 8081;
+const port = 80;
 
 app.get("/", function (req, res) {
-  html = fs.readFileSync("index.html");
+  html = fs.readFileSync("src/index.html");
   res.writeHead(200);
   res.write(html);
   res.end();
