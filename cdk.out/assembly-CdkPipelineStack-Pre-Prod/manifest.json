@@ -1,0 +1,96 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "CdkPipelineStackPreProdWebService3B7E2DE5.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "CdkPipelineStackPreProdWebService3B7E2DE5.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "CdkPipelineStackPreProdWebService3B7E2DE5": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkPipelineStackPreProdWebService3B7E2DE5.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/addd30372315a374f3f66a72c1ad284598c75aaefd39437ca9de4cc38b3e1dce.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "CdkPipelineStackPreProdWebService3B7E2DE5.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "Pre-Prod-WebService"
+      },
+      "dependencies": [
+        "CdkPipelineStackPreProdWebService3B7E2DE5.assets"
+      ],
+      "metadata": {
+        "/CdkPipelineStack/Pre-Prod/WebService/Application": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Application"
+          }
+        ],
+        "/CdkPipelineStack/Pre-Prod/WebService/AppVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppVersion"
+          }
+        ],
+        "/CdkPipelineStack/Pre-Prod/WebService/MyWebApp-aws-elasticbeanstalk-ec2-role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyWebAppawselasticbeanstalkec2role9B05C648"
+          }
+        ],
+        "/CdkPipelineStack/Pre-Prod/WebService/MyWebApp-InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyWebAppInstanceProfile"
+          }
+        ],
+        "/CdkPipelineStack/Pre-Prod/WebService/Environment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Environment"
+          }
+        ],
+        "/CdkPipelineStack/Pre-Prod/WebService/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/CdkPipelineStack/Pre-Prod/WebService/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/CdkPipelineStack/Pre-Prod/WebService/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/CdkPipelineStack/Pre-Prod/WebService/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "CdkPipelineStack/Pre-Prod/WebService"
+    }
+  }
+}
