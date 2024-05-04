@@ -1722,7 +1722,7 @@
                             "value": "t2.micro"
                           }
                         ],
-                        "solutionStackName": "64bit Amazon Linux 2 v5.8.0 running Node.js 18",
+                        "solutionStackName": "64bit Amazon Linux 2023 v6.1.4 running Node.js 20",
                         "versionLabel": {
                           "Ref": "AppVersion"
                         }
